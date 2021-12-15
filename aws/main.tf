@@ -7,7 +7,7 @@ resource "aws_instance" "ragh_terr" {
   ami = "ami-04505e74c0741db8d"
   instance_type = var.instance_type
   tags = {
-    "Name" = "ragh_terra"
+    "Name" = "ragh_terraform"
   }
 }
 
