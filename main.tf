@@ -1,5 +1,5 @@
 provider "google"{
-    credential = file ("nifty-harmony-329714-2c3f0fcac0c3.json")
+    credentials = file ("nifty-harmony-329714-2c3f0fcac0c3.json")
     project = "nifty-harmony-329714"
     region = "us-central1"
     zone = "us-central1-c"
