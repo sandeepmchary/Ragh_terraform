@@ -13,3 +13,12 @@ variable "user_name" {
     description = "User creation"
     default = [ "User1", "User2", "User3" ]
 }
+
+variable "project_environment" {
+  description = "project Environment"
+  type = map(string)
+  default = {
+    "env" = "alpha"
+    "project" = "test"
+  }
+}
