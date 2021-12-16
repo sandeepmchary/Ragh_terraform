@@ -6,6 +6,7 @@ provider "aws" {
 resource "aws_instance" "ragh_terr" {
   ami = "ami-04505e74c0741db8d"
   instance_type = var.instance_type
+  count = var.instance_count
   tags = {
     "Name" = "ragh_terraform"
   }
@@ -16,3 +17,10 @@ variable "instance_type" {
   type = string
   default = "t2.micro"
 }
+
+variable "instance_count" {
+  description = "No of instances"
+  type = number
+  default = 2
+}
+
